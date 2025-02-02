@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Helpdesk - Dashboard</title>
+    <link rel="stylesheet" href="it.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to IT Helpdesk</h1>
+        <!--Ticket Submission Form-->
+        <div id="ticket-form">
+            <h2>Submit a Support Ticket</h2>
+            <form id="ticketForm">
+                <input type="text" id="ticketTitle" placeholder="Ticket Title" required>
+                <textarea id="ticketDescription" placeholder="Ticket Description" required></textarea>
+                <button type="submit">Submit Ticket</button>
+
+            </form>
+        </div>
+        <!--Ticket Display Area-->
+        <div id="ticket-list">
+            <h2>Your Submitted Ticket</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketTableBody">
+                    
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
