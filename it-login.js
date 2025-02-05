@@ -13,8 +13,14 @@ document.getElementById('loginForm').addEventListener('submit',function(event) {
     const user = users.find(u => u.username === username && u.password=== password);
 if(user) {
     // store login status in localStorage
-    
+    localStorage.setItem('loggedIn', true);
+    localStorage.setItem('username', username);
+    // Redirect to dashboard
+    window.location.href = 'dashboard.html';
+} else {
+    // Display error message 
+    document.getElementById('login-error').textContent = 'Invalid username or password.';
 }
 
 
-})
+});
